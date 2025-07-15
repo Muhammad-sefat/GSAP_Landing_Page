@@ -17,8 +17,6 @@ const Hero = () => {
     const paragraphSplit = new SplitText(".subtitle", {
       type: "lines",
     });
-
-    // Apply text-gradient class once before animating
     heroSplit.chars.forEach((char) => char.classList.add("text-gradient"));
 
     gsap.from(heroSplit.chars, {
